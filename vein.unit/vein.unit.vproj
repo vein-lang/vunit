@@ -1,0 +1,11 @@
+version: 0.0.1
+description: Unit testing
+author:
+- name: Yuuki Wesp
+  github: '0xF6'
+- name: Vein Lang
+  github: 'vein-lang'
+license: MIT license
+packages:
+- std@0.12.2
+- fs@0.0.2

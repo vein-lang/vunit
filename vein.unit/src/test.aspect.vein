@@ -1,0 +1,12 @@
+#use "vein/lang"
+
+#space "vein/lang/test"
+
+public aspect TestAspect();
+
+
+public class Foo 
+{
+    [TestAspect]
+    public xoo() : void {}
+}

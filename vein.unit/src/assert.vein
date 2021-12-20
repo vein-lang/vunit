@@ -1,0 +1,12 @@
+#use "vein/lang"
+
+#space "vein/lang/test"
+
+public static class Assert
+{
+    public static equal(s1: string, s2: string): void
+    {
+        if (s1 != s2)
+            fail new AssertException();
+    }
+}

@@ -1,0 +1,11 @@
+#use "vein/lang"
+
+#space "vein/lang/test"
+
+public class AssertException : Exception
+{
+    new (msg: string)
+    {
+        base.message = msg;
+    }
+}
