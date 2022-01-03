@@ -1,0 +1,5 @@
+#use "vein/lang"
+
+#space "vein/lang/test/adapter"
+
+public aspect TestLink(clazz: string, method: string, skip: boolean);

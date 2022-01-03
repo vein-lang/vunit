@@ -4,9 +4,3 @@
 
 public aspect TestAspect();
 
-
-public class Foo 
-{
-    [TestAspect]
-    public xoo() : void {}
-}

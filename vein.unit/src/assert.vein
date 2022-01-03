@@ -2,11 +2,22 @@
 
 #space "vein/lang/test"
 
+
 public static class Assert
 {
     public static equal(s1: string, s2: string): void
     {
         if (s1 != s2)
-            fail new AssertException();
+            fail new AssertFault("");
     }
+    public static equal(s1: i32, s2: i32): void
+    {
+        if (s1 != s2)
+            fail new AssertFault("");
+    }
+
+    public static pass(m: string): void
+        |> fail new AssertSuccess(m);
+    public static pass(): void
+        |> pass("");
 }

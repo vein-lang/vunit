@@ -1,0 +1,13 @@
+#use "vein/lang"
+
+#space "vein/lang/test/adapter"
+
+public static class Command : Object
+{
+    [native("vein:test:data")]
+    private static extern veinc_report_data(o: object): void;
+
+
+    public static reportData(o: object): void
+        |> Command.veinc_report_data(o);
+}
